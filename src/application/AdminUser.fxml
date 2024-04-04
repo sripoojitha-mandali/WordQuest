@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #b06880;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminUserController">
+   <children>
+      <Rectangle fill="#1d3675" height="85.0" layoutX="10.0" layoutY="9.0" stroke="#023047" strokeType="INSIDE" strokeWidth="0.0" width="700.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="273.0" layoutY="21.0" text="User CRUD" textFill="#fccfde">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button layoutX="40.0" layoutY="23.0" mnemonicParsing="false" onAction="#back" prefHeight="41.0" prefWidth="49.0" textFill="#023047" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="23.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.699999988079071" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Assets/back-button.jpeg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="560.0" layoutY="23.0" mnemonicParsing="false" onAction="#logoout" prefHeight="27.0" prefWidth="100.0" text="Logout" textFill="#023047" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="23.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.699999988079071" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Assets/logout_icon_184025.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <ImageView fitHeight="441.0" fitWidth="700.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assets/test13.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle fill="#b06880" height="130.0" layoutX="64.0" layoutY="336.0" opacity="0.47" stroke="#023047" strokeType="INSIDE" strokeWidth="0.0" width="586.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <TableView fx:id="userTable" layoutX="68.0" layoutY="98.0" onMouseClicked="#selectRow" prefHeight="220.0" prefWidth="580.0" AnchorPane.leftAnchor="68.0" AnchorPane.topAnchor="98.0">
+        <columns>
+          <TableColumn fx:id="firstnameColumn" onEditCommit="#changeFirstnameCellEvent" prefWidth="130.0" text="Firstname" />
+          <TableColumn fx:id="lastnameColumn" onEditCommit="#changeLastnameCellEvent" prefWidth="151.0" text="Lastname" />
+            <TableColumn fx:id="usernameColumn" onEditCommit="#changeUsernameCellEvent" prefWidth="136.0" text="Username" />
+            <TableColumn fx:id="passwordColumn" onEditCommit="#changePasswordCellEvent" prefWidth="162.0" text="Password" />
+        </columns>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.30000001192092896" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TableView>
+      <Button layoutX="520.0" layoutY="365.0" mnemonicParsing="false" onAction="#addUser" prefHeight="27.0" prefWidth="100.0" text="Add" textFill="#023047" AnchorPane.rightAnchor="80.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.699999988079071" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="deleteBtn" layoutX="520.0" layoutY="425.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="27.0" prefWidth="100.0" text="Delete" textFill="#023047" AnchorPane.rightAnchor="80.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.699999988079071" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="85.0" layoutY="340.0" text="Firstname :" textFill="#fccfde" AnchorPane.bottomAnchor="143.0" AnchorPane.leftAnchor="85.0">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <TextField fx:id="firstnameTxtField" layoutX="80.0" layoutY="365.0" prefHeight="26.0" prefWidth="200.0" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="80.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.30000001192092896" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+      <Label layoutX="85.0" layoutY="400.0" text="Lastname :" textFill="#fccfde" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="85.0" />
+      <TextField fx:id="lastnameTxtField" layoutX="80.0" layoutY="425.0" prefHeight="26.0" prefWidth="200.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="80.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.30000001192092896" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+      <Label layoutX="304.0" layoutY="340.0" text="Username :" textFill="#fccfde" AnchorPane.bottomAnchor="143.0" AnchorPane.leftAnchor="304.0">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <TextField fx:id="usernameTxtField" layoutX="300.0" layoutY="365.0" prefHeight="26.0" prefWidth="200.0" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="300.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.30000001192092896" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+      <Label layoutX="306.0" layoutY="400.0" text="Password :" textFill="#fccfde" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="306.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="passwordTxtField" layoutX="300.0" layoutY="425.0" prefHeight="26.0" prefWidth="200.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="300.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.30000001192092896" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+   </children>
+</AnchorPane>
