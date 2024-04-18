@@ -36,9 +36,9 @@ WordQuest is an innovative educational platform designed to enhance English voca
 <img width="696" alt="image" src="https://github.com/sripoojitha-mandali/WordQuest/assets/114782541/5c73a361-fc5d-48ec-9403-92dc835c37dd">
 
 ## Contributions
-- Sri Poojitha Mandali
-- Srivarini Mandali
-- Pavan Madhav Nainala
+- Sri Poojitha Mandali - 33.33%
+- Srivarini Mandali - 33.33%
+- Pavan Madhav Nainala - 33.33%
 
 WE ATTEST THAT WE HAVEN’T USED ANY OTHER STUDENTS’ WORK IN OUR ASSIGNMENT AND ABIDE BY THE POLICIES LISTED IN THE STUDENT HANDBOOK
 
