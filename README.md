@@ -10,7 +10,9 @@ WordQuest is an innovative educational platform designed to enhance English voca
 - **Admin Dashboard**: Administrators can manage vocabulary lists and user profiles, ensuring content is up-to-date and relevant.
 
 ## Project Resources
-[![PPT](https://img.shields.io/badge/view-Presentation-blue?style=for-the-badge&logo=github)](https://drive.google.com/file/d/12usiGRIliUX2HVyq948I3178KrzLGbME/view?usp=drive_link) 
+[![PPT](https://img.shields.io/badge/view-Presentation-blue?style=for-the-badge&logo=github)](https://drive.google.com/file/d/12usiGRIliUX2HVyq948I3178KrzLGbME/view?usp=drive_link) <br>
+[![Demo](https://img.shields.io/badge/view-Demo-red?style=for-the-badge&logo=github)](https://drive.google.com/file/d/1m5MzrVhFpoiAb3JlRKGohat5SyPZaMOE/view?usp=sharing) 
+
 
 ## Tech Stack
 
